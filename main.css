@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* list-style: none; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1,
+h5 {
+  letter-spacing: 2px;
+  color: #C8C8C8;
+}
+
+h2 {
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  color: #8b8b8b;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    left: 2.6rem;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: .5px;
+  color: #BEBEBE;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+main .about-section {
+  position: relative;
+  margin: 5rem 0;
+}
+
+main .about-section .about-contents .about-items {
+  padding-bottom: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+main .about-section .about-contents .about-item-1 {
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main .about-section .about-contents .about-item-1 {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main .about-section .about-contents .about-item-1 {
+    width: 300px;
+    padding: 0;
+  }
+}
+
+main .about-section .about-contents .about-item-1 img {
+  border-radius: 10%;
+
+}
+
+main .about-section .about-contents .about-item-2 {
+  padding: 0 5px;
+}
+
+main .qual-section {
+  position: relative;
+  margin: 5rem 0;
+}
+
+main .qual-section .qual-contents .qual-items {
+  padding-bottom: 3rem;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .qual-section .qual-contents .qual-items h3{
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-bottom: .5rem;
+  color: #8b8b8b;
+}
+
+main .qual-section .qual-contents .qual-items li{
+  color: #BEBEBE;
+  margin: 20px 1.3rem;
+}
+
+.Interests-section{
+  margin-bottom: 4rem;
+}
+
+.Interests-header h2{
+  text-align: center;
+  padding: 0;
+  margin: 1rem;
+}
+
+.Interests-content p{
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+header {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+header .hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+header .hero-section h5 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  header .hero-section h5 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .hero-section h5 {
+    font-size: 2.7rem;
+  }
+}
+
+header .hero-section span {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  header .hero-section span {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .hero-section span {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header .hero-section h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .hero-section h1 {
+    font-size: 4.5rem;
+  }
+}
+
+header .hero-section :nth-child(3) {
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  header .hero-section :nth-child(3) {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .hero-section :nth-child(3) {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .hero-section :nth-child(3) {
+    font-size: 3rem;
+  }
+}
+
+footer {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+footer p a{
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #C8C8C8;
+}
+
+footer a{
+  font-size: 1.2rem;
+  color: #C8C8C8;
+}
